@@ -16,7 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+                
+      
+                  // ANSWER //          
 // Because the nested function is still inside of the function.
 
 
@@ -60,11 +62,16 @@ const zooAnimals = [
   */
 
   function animalNames(){
-   zooAnimals.forEach(function(item){
-     console.log(item.animal_name);
-     console.log(item.scientific_name);
-   });
+  let displayNames = []
+  
+  zooAnimals.forEach(function(animal){
+    displayNames.push("name:" + ' ' + animal.animal_name + ', ' + "scientific:" + ' ' + animal.scientific_name)
+  });
+    return displayNames
 }
+console.log(animalNames);
+//["name: pelican, scientific: Pelecanus"]
+
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
